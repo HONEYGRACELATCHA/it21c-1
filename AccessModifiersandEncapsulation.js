@@ -11,4 +11,17 @@ class Person {
         this.#age = age;
         this.#hobby = hobby;
     }
+    //Getters
+    get name() {
+        return this.#name;
+    }
+
+    get age() {
+        return this.#age;
+    }
+
+    get hobby() {
+        return this.#hobby;
+    }
 }
+
