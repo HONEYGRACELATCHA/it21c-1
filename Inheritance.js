@@ -57,4 +57,10 @@ class Student extends Person {
     
 }
 
+// Creating an object (instance) of the Person class
+const studenOne = new Student('Honey Grace Latcha', 19, 'Reading & Singing', 'Information Technology');
+
+// Calling methods
+studenOne.displayInfo();
+
 
