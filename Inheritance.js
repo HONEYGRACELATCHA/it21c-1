@@ -41,7 +41,12 @@ class Person {
 class Student extends Person {
     constructor(name, age, hobbies, program) {
         super(name, age, hobbies);
-        this.major = program;
+        this.program = program;
+    }
+    // Overriding the displayInfo method
+    displayInfo() {
+        super.displayInfo();
+        console.log("Program: " + this.program);
     }
 }
 
