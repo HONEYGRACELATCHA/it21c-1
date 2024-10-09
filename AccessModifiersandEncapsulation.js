@@ -38,4 +38,9 @@ class Person {
         `;
     }
 }
+// Creating an object (instance) of the Person class
+const personOne = new Person('Honey Grace Latcha', 19, 'Reading & Singing');
+
+// Calling methods
+personOne.displayInfo();
 
