@@ -27,6 +27,16 @@ class Person {
         console.log("Name: " + this.name);
         console.log("Age: " + this.age);
         console.log("Hobbies: " + this.hobbies);
-
+    }
+    // Method to display person information in the HTML
+    displayInfoHTML() {
+        const personElement = document.getElementById('personOne');
+        personElement.innerHTML = `
+            <strong>Name:</strong> ${this.name}<br>
+            <strong>Age:</strong> ${this.age}<br>
+            <strong>Hobbies:</strong> ${this.hobbies}
+        `;
     }
 }
+
+
