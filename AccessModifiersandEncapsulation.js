@@ -3,13 +3,12 @@ class Person {
     //Private Fields
     #name;
     #age;
-    #gender;
-    #hobby;
+    #hobbies;
 
-    constructor(name, age, hobby) {
+    constructor(name, age, hobbies) {
         this.#name = name;
         this.#age = age;
-        this.#hobby = hobby;
+        this.#hobbies = hobbies;
     }
     //Getters
     get name() {
@@ -21,7 +20,15 @@ class Person {
     }
 
     get hobby() {
-        return this.#hobby;
+        return this.#hobbies;
     }
+    // Method to display person information in the console
+    displayInfo() {
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("Hobbies: " + this.hobbies);
+
+    }
+
 }
 
